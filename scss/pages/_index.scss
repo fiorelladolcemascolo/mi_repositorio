@@ -1,0 +1,181 @@
+/* ---------------- section ppal index------------------- */
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+
+  &__texto {
+    background-color: #F27658;
+    color: $col-blanco;
+    font-family: $ff-chivo;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  &__img {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    &__texto {
+      text-align: left;
+      padding-top: 75px;
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include desktop {
+    h1 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    &__texto {
+      padding: 100px;
+    }
+  }
+}
+
+/* ---------------- Frase destacada azul index ------------------- */
+
+.frase-azul {
+  background-color: #1A3E66;
+  color: $col-blanco;
+  font-family: $ff-chivo;
+  font-style: italic;
+  padding: 2rem;
+  text-align: center;
+
+  @include desktop {
+    background-color: transparent;
+    background-image: url(../img/frase-azul.jpg);
+    font-size: 1.8rem;
+    height: 363px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__texto {
+      p {
+        position: relative;
+        top: 10px;
+      }
+    }
+  }
+}
+
+
+/* ---------------- section projects index------------------- */
+
+.projects {
+  background-color: $col-beige;
+  padding: 50px 100px;
+  font-family: $ff-chivo;
+  font-weight: 700;
+
+  &__categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      text-align: center;
+      width: 295px;
+      height: 100px;
+      align-items: center;
+      padding-top: 2rem;
+      color: $col-blanco;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    a {
+      background-color: $col-celeste
+    }
+  }
+
+  h2 {
+    color: $col-azulclaro;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    font-weight: 700;
+  }
+
+  &__logo {
+    @extend .projects__brand;
+
+    a {
+      background-color: $col-naranja;
+    }
+  }
+
+  &__motion {
+    @extend .projects__brand;
+
+    a {
+      background-color: $col-azulclaro;
+    }
+  }
+
+  &__ux-ui {
+    @extend .projects__brand;
+
+    a {
+      background-color: #FAC8C3;
+    }
+  }
+
+  &__editorial {
+    @extend .projects__brand;
+
+    a {
+      background-color: $col-azuloscuro;
+    }
+  }
+
+  &__social{
+    @extend .projects__brand;
+    a{
+      background-color: $col-verdeagua;
+    }
+  }
+
+  &__enviromental{
+    @extend .projects__brand;
+a{
+  background-color: $col-amarillo;
+}
+  }
+
+}

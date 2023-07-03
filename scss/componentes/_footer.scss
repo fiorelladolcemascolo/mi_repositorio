@@ -1,0 +1,54 @@
+/* ---------------- main FOOTER ------------------- */
+
+.footer {
+  background-color: $col-azulclaro;
+  font-family: $ff-chivo;
+  color: $col-blanco;
+
+  &__container-img {
+    display: none;
+  }
+
+  &_container ul li a {
+    color: $col-blanco;
+  }
+
+  i {
+    font-size: 1.5rem;
+    margin: 0px;
+  }
+
+  &__h2 {
+    margin: 40px auto 5px auto;
+  }
+
+  &__list {
+    margin: 30px auto;
+  }
+
+  @include tablet {
+    & {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 435px;
+
+      &__container-img {
+        display: block;
+        align-content: baseline;
+        position: relative;
+      }
+
+      &__img {
+        height: 397px;
+        position: absolute;
+        bottom: 0px;
+        left: -100px;
+      }
+
+      &__container {
+        position: relative;
+      }
+    }
+  }
+
+}

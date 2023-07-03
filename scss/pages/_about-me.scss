@@ -1,0 +1,61 @@
+/* ---------------- PAGINA ABOUT ME------------------- */
+
+.aboutme {
+  background-color: $col-celeste;
+  font-family: $ff-chivo;
+  padding: 2rem;
+
+  &__txt {
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $col-blanco;
+    }
+
+    p {
+      color: $col-azuloscuro;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-top: 25px;
+    }
+  }
+
+  &__img {
+    margin-top: 50px;
+  }
+
+  &__blue-container {
+    background-color: #1A3E66;
+    height: 109px;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 100px;
+
+    &__txt {
+      padding-right: 75px;
+
+      h1 {
+        font-size: 3.2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-top: 25px;
+      }
+    }
+
+    &__blue-container {
+      height: 237px;
+    }
+
+    &__img {
+      position: relative;
+      top: 190px;
+    }
+
+  }
+
+}

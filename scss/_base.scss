@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+$col-rosita: #FAC8C3;
+$col-beige: #FFF1E7;
+$col-celeste: #87C0F4;
+$col-naranja: #F06251;
+$col-azulclaro: #4D6AB2;
+$col-azuloscuro: #1A3E66;
+$col-verdeagua: #82C4B4;
+$col-amarillo: #F9B82D;
+$col-blanco: white;
+$col-gris: #737373;
+
+$ff-chivo: 'Chivo', sans-serif;
+
+
+@mixin tablet {
+    @media(min-width:768px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width:1024px){
+        @content;
+    }
+}

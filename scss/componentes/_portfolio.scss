@@ -1,0 +1,86 @@
+/* ---------------- PAGINA BRAND IDENTITY BASE------------------- */
+
+.encabezado__general h1 {
+  color: $col-blanco;
+  font-family: 'Chivo', sans-serif;
+  background-color: $col-celeste;
+  font-weight: 700;
+  height: 142px;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  margin: 0px;
+
+  @include desktop{
+    font-weight: 700;
+    height: 295px;
+    padding-left: 100px;
+    padding-top: 100px;
+    font-size: 3.3rem;
+  }
+}
+
+.portfolio {
+  background-color: $col-beige;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: $col-gris;
+  font-family: $ff-chivo;
+
+  img {
+    max-width: 500px;
+  }
+
+  H4 {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  @include desktop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px;
+  }
+}
+
+
+/* ---------------- PAGINA LOGO DESIGN------------------- */
+.encabezado__general .h1-logo-design {
+  background-color: $col-naranja;
+}
+
+
+/* ---------------- PAGINA MOTION & VIDEO------------------- */
+.encabezado__general .h1-motion {
+  background-color: $col-azulclaro ;
+}
+
+.video-style {
+  max-height: 90vh;
+  align-content: center;
+}
+
+/* ---------------- PAGINA UX UI------------------- */
+
+.encabezado__general .h1-ux {
+  background-color: #fdbdb7;
+}
+
+/* ---------------- PAGINA EDITORIAL------------------- */
+
+.encabezado__general .h1-editorial {
+  background-color: $col-azuloscuro ;
+}
+
+/* ---------------- PAGINA ENVIROMENTAL------------------- */
+
+.encabezado__general .h1-enviromental {
+  background-color: $col-amarillo ;
+}
+
+/* ---------------- PAGINA SOCIAL MEDIA------------------- */
+
+.encabezado__general .h1-social {
+  background-color: $col-verdeagua ;
+}

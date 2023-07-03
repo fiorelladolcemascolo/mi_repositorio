@@ -10,481 +10,72 @@ img {
   width: 100%;
 }
 
-/* ---------------- header ------------------- */
 a {
   text-decoration: none;
-  color: black;
 }
 
-
-.navbar-brand {
-  width: 165px;
-}
-
+/* ---------------- header ------------------- */
 .navbar {
   background-color: #FAC8C3;
   height: 132px;
 }
-
+.navbar-brand {
+  width: 165px;
+}
 .navbar-toggler {
   color: #4D6AB2;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   align-items: center;
-
 }
-
 .navbar-toggler-icon {
   color: #4D6AB2;
   padding: auto;
   position: relative;
   right: 2px;
 }
-
-.nav-item .nav-link {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
+.navbar .nav-item .nav-link {
+  font-family: "Chivo", sans-serif;
+  font-weight: 700;
   color: #4D6AB2;
   font-size: 1.1rem;
   background-color: #FAC8C3;
   justify-content: center;
 }
-
-ul {
+.navbar .nav-item .nav-link:hover {
+  color: #F06251;
+}
+.navbar-collapse {
+  text-align: center;
+}
+.navbar ul {
   justify-content: center;
 }
-
-
-
-/* ---------------- main index------------------- */
-/* ---------------- section ppal index------------------- */
-
-.presentacion {
-  display: flex;
-  flex-direction: column;
+.navbar a {
+  text-decoration: none;
+  color: black;
 }
 
-.presentacion__texto {
-  background-color: #F27658;
-  color: white;
-  font-family: 'Chivo', sans-serif;
-  text-align: center;
-  padding: 2rem;
-}
-
-.presentacion h3 {
-  padding-top: 0.5rem;
-  font-size: 1.5rem;
-}
-
-.presentacion__img {
-  display: flex;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-/* ---------------- media queries section ppal index------------------- */
-
-@media (min-width:768px) and (orientation:landscape) {
-
-  .presentacion {
-      display: grid;
-      grid-template-columns: 40% 60%;
-  }
-
-  .presentacion__texto {
-      text-align: left;
-      font-family: 'Chivo', sans-serif;
-      padding-top: 75px;
-      padding-left: 75px;
-      padding-right: 75px;
-  }
-
-  h1 {
-      font-size: 2.5rem;
-  }
-
-  .presentacion h3 {
-      font-size: 1.5rem;
-  }
-
-}
-
-
-@media (min-width:1200px) and (orientation:landscape) {
-
-  h1 {
-      font-size: 4rem;
-  }
-
-  .presentacion h3 {
-      font-size: 2rem;
-  }
-
-  .presentacion__texto {
-      padding: 100px;
-  }
-}
-
-
-/* ---------------- main index ------------------- */
-/* ---------------- Frase destacada azul index ------------------- */
-
-.img-azul {
-  display: none;
-}
-
-.frase-azul {
-  background-color: #1A3E66;
-  color: white;
-  font-family: 'Chivo', sans-serif;
-  font-style: italic;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* ---------------- media queries Frase destacada azul index------------------- */
-
-@media (min-width:1024px) and (orientation:landscape) {
-
-  .frase-azul {
-      background-color: transparent;
-      background-image: url(../img/frase-azul.jpg);
-      font-size: 1.8rem;
-      height: 363px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .frase-azul__texto p {
-      position: relative;
-      top: 10px;
-  }
-}
-
-
-/* ---------------- main index------------------- */
-/* ---------------- section projects index------------------- */
-
-.projects {
-  background-color: #FFF1E7;
-  padding: 50px 100px;
-  font-family: 'Chivo', sans-serif;
-  font-weight: 700;
-}
-
-.projects h2 {
-  color: #4D6AB2;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 40px;
-  font-weight: 700;
-
-}
-
-.projects__categorias a {
-  text-align: center;
-  width: 295px;
-  height: 100px;
-  align-items: center;
-  padding-top: 2rem;
-  color: white;
-}
-
-.projects__categorias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.projects__brand a {
-  background-color: #87C0F4;
-}
-
-.projects__brand {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.projects__logo a {
-  background-color: #F06251;
-}
-
-.projects__logo {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.projects__motion a {
-  background-color: #4D6AB2;
-}
-
-.projects__motion {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.projects__ux-ui a {
-  background-color: #FAC8C3;
-}
-
-.projects__ux-ui {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.projects__editorial a {
-  background-color: #1A3E66;
-}
-
-.projects__editorial {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.projects__social a {
-  background-color: #82C4B4;
-}
-
-.projects__social {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.projects__enviromental a {
-  background-color: #F9B82D;
-}
-
-.projects__enviromental {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-
-/* ---------------- main FOOTER ------------------- */
-
-.footer {
-  background-color: #4D6AB2;
-  font-family: 'Chivo', sans-serif;
-  color: white;
-}
-
-.footer__container-img {
-  display: none;
-}
-
-.footer_container ul li a {
-  color: white;
-}
-
-i {
-  font-size: 1.5rem;
-  margin: 0px;
-}
-
-.footer__h2 {
-  margin: 40px auto 5px auto;
-}
-
-.footer__list {
-  margin: 30px auto;
-}
-
-/* ---------------- media queries footer ------------------- */
-
-@media (min-width:768px) and (orientation:landscape) {
-
-  .footer__container-img {
-      display: block;
-      align-content: baseline;
-      position: relative;
-  }
-
-  .footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      height: 435px;
-  }
-
-  .footer__img {
-      height: 397px;
-      position: absolute;
-      bottom: 0px;
-      left: -100px;
-  }
-
-  .footer__container {
-      position: relative;
-  }
-
- 
-}
-
-
-/* ---------------- PAGINA ABOUT ME------------------- */
-/* ---------------- section about me------------------- */
-
-.aboutme__section {
-  background-color: #87C0F4;
-  font-family: 'Chivo', sans-serif;
-  padding: 2rem;
-}
-
-.aboutme__txt h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: white;
-}
-
-.aboutme__txt p {
-  color: #1A3E66;
-  font-weight: 700;
-  font-size: 0.9rem;
-  margin-top: 25px;
-}
-
-.aboutme__img {
-  margin-top: 50px;
-}
-
-.aboutme__blue-container {
-  background-color: #1A3E66;
-  height: 109px;
-}
-
-/* ---------------- media queries about me ------------------- */
-
-@media (min-width:1024px) and (orientation:landscape) {
-  .aboutme__section {
-      display: grid;
-      grid-template-columns: 65% 35%;
-      padding: 100px;
-  }
-
-  .aboutme__txt {
-      padding-right: 75px;
-  }
-
-  .aboutme__txt h1 {
-      font-size: 3.2rem;
-  }
-
-  .aboutme__txt p {
-      font-size: 1.2rem;
-      margin-top: 25px;
-  }
-
-  .aboutme__blue-container {
-      height: 237px;
-  }
-
-  .aboutme__img {
-      position: relative;
-      top: 190px;
-  }
-}
-
-/* ---------------- PAGINA CONTACTO------------------- */
-/* ---------------- main formulario------------------- */
-.form__section {
-  background-color: #FFF1E7;
-  font-family: 'Chivo', sans-serif;
-  padding: 2rem;
-}
-
-.form__section h3 {
-  color: #1A3E66;
-  font-size: 1.2rem;
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-.form__body {
-  display: flex;
-  flex-direction: column;
-  max-width: 700px;
-  margin: auto;
-}
-
-.form__body input {
-  border: #4D6AB2 solid 1px;
-  padding: 0.5rem;
-}
-
-.form__body textarea {
-  border: #4D6AB2 solid 1px;
-  padding: 0.5rem;
-}
-
-.form__body label {
-  color: #4D6AB2;
-  font-weight: 400;
-}
-
-.form__btn {
-  background-color: #4D6AB2;
-  border-radius: 8px;
-  width: 120px;
-  color: white;
-  margin: auto;
-  border-width: 0px;
-}
-
-/* ---------------- media queries formulario ------------------- */
-
-@media (min-width:1200px) and (orientation:landscape) {
-
-  .form__section {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      padding: 100px;
-
-  }
-
-  .form__section h3 {
-      grid-column: 1/4;
-      text-align: left;
-      font-size: 2rem;
-  }
-
-  .form__body {
-      grid-column: 6/13;
-      margin: 0px;
-      max-width: 800px;
-  }
-}
-
-/* ---------------- PAGINA BRAND IDENTITY------------------- */
-
+/* ---------------- PAGINA BRAND IDENTITY BASE------------------- */
 .encabezado__general h1 {
   color: white;
-  font-family: 'Chivo', sans-serif;
-  background-color: #7DA7CE;
+  font-family: "Chivo", sans-serif;
+  background-color: #87C0F4;
   font-weight: 700;
   height: 142px;
   padding-left: 2rem;
   padding-top: 3rem;
   margin: 0px;
+}
+@media (min-width: 1024px) {
+  .encabezado__general h1 {
+    font-weight: 700;
+    height: 295px;
+    padding-left: 100px;
+    padding-top: 100px;
+    font-size: 3.3rem;
+  }
 }
 
 .portfolio {
@@ -493,36 +84,22 @@ i {
   display: flex;
   flex-direction: column;
   gap: 20px;
-color: #737373;
-font-family: 'Chivo', sans-serif;
+  color: #737373;
+  font-family: "Chivo", sans-serif;
 }
-
-.portfolio img{
+.portfolio img {
   max-width: 500px;
 }
-
-.portfolio H4{
+.portfolio H4 {
   font-size: 1rem;
   margin-top: 5px;
 }
-
-/* ---------------- media queries BRAND IDENTITY ------------------- */
-
-@media (min-width:1200px) and (orientation:landscape){
-.portfolio{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 100px;
-}
-
-.encabezado__general h1 {
-  font-weight: 700;
-  height: 295px;
-  padding-left: 100px;
-  padding-top: 100px;
-  font-size: 3.3rem;
-}
-
+@media (min-width: 1024px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px;
+  }
 }
 
 /* ---------------- PAGINA LOGO DESIGN------------------- */
@@ -530,37 +107,318 @@ font-family: 'Chivo', sans-serif;
   background-color: #F06251;
 }
 
-
 /* ---------------- PAGINA MOTION & VIDEO------------------- */
 .encabezado__general .h1-motion {
-  background-color:#4D6AB2 ;
+  background-color: #4D6AB2;
 }
 
 .video-style {
   max-height: 90vh;
-align-content: center;
+  align-content: center;
 }
 
 /* ---------------- PAGINA UX UI------------------- */
-
 .encabezado__general .h1-ux {
-  background-color:#fdbdb7 ;
+  background-color: #fdbdb7;
 }
 
 /* ---------------- PAGINA EDITORIAL------------------- */
-
 .encabezado__general .h1-editorial {
-  background-color:#1A3E66 ;
+  background-color: #1A3E66;
 }
 
 /* ---------------- PAGINA ENVIROMENTAL------------------- */
-
 .encabezado__general .h1-enviromental {
-  background-color:#F9B82D ;
+  background-color: #F9B82D;
 }
 
 /* ---------------- PAGINA SOCIAL MEDIA------------------- */
-
 .encabezado__general .h1-social {
-  background-color:#82C4B4 ;
+  background-color: #82C4B4;
 }
+
+/* ---------------- main FOOTER ------------------- */
+.footer {
+  background-color: #4D6AB2;
+  font-family: "Chivo", sans-serif;
+  color: white;
+}
+.footer__container-img {
+  display: none;
+}
+.footer_container ul li a {
+  color: white;
+}
+.footer i {
+  font-size: 1.5rem;
+  margin: 0px;
+}
+.footer__h2 {
+  margin: 40px auto 5px auto;
+}
+.footer__list {
+  margin: 30px auto;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 435px;
+  }
+  .footer__container-img {
+    display: block;
+    align-content: baseline;
+    position: relative;
+  }
+  .footer__img {
+    height: 397px;
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+  }
+  .footer__container {
+    position: relative;
+  }
+}
+
+/* ---------------- section ppal index------------------- */
+.presentacion {
+  display: flex;
+  flex-direction: column;
+}
+.presentacion__texto {
+  background-color: #F27658;
+  color: white;
+  font-family: "Chivo", sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+.presentacion__img {
+  display: flex;
+}
+.presentacion h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.presentacion h3 {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .presentacion {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .presentacion__texto {
+    text-align: left;
+    padding-top: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .presentacion h1 {
+    font-size: 2.5rem;
+  }
+  .presentacion h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .presentacion h1 {
+    font-size: 4rem;
+  }
+  .presentacion h3 {
+    font-size: 2rem;
+  }
+  .presentacion__texto {
+    padding: 100px;
+  }
+}
+
+/* ---------------- Frase destacada azul index ------------------- */
+.frase-azul {
+  background-color: #1A3E66;
+  color: white;
+  font-family: "Chivo", sans-serif;
+  font-style: italic;
+  padding: 2rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .frase-azul {
+    background-color: transparent;
+    background-image: url(../img/frase-azul.jpg);
+    font-size: 1.8rem;
+    height: 363px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .frase-azul__texto p {
+    position: relative;
+    top: 10px;
+  }
+}
+
+/* ---------------- section projects index------------------- */
+.projects {
+  background-color: #FFF1E7;
+  padding: 50px 100px;
+  font-family: "Chivo", sans-serif;
+  font-weight: 700;
+}
+.projects__categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects__categorias a {
+  text-align: center;
+  width: 295px;
+  height: 100px;
+  align-items: center;
+  padding-top: 2rem;
+  color: white;
+}
+.projects__brand, .projects__enviromental, .projects__social, .projects__editorial, .projects__ux-ui, .projects__motion, .projects__logo {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.projects__brand a, .projects__enviromental a, .projects__social a, .projects__editorial a, .projects__ux-ui a, .projects__motion a, .projects__logo a {
+  background-color: #87C0F4;
+}
+.projects h2 {
+  color: #4D6AB2;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  font-weight: 700;
+}
+.projects__logo a {
+  background-color: #F06251;
+}
+.projects__motion a {
+  background-color: #4D6AB2;
+}
+.projects__ux-ui a {
+  background-color: #FAC8C3;
+}
+.projects__editorial a {
+  background-color: #1A3E66;
+}
+.projects__social a {
+  background-color: #82C4B4;
+}
+.projects__enviromental a {
+  background-color: #F9B82D;
+}
+
+/* ---------------- PAGINA ABOUT ME------------------- */
+.aboutme {
+  background-color: #87C0F4;
+  font-family: "Chivo", sans-serif;
+  padding: 2rem;
+}
+.aboutme__txt h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+.aboutme__txt p {
+  color: #1A3E66;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 25px;
+}
+.aboutme__img {
+  margin-top: 50px;
+}
+.aboutme__blue-container {
+  background-color: #1A3E66;
+  height: 109px;
+}
+@media (min-width: 1024px) {
+  .aboutme {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 100px;
+  }
+  .aboutme__txt {
+    padding-right: 75px;
+  }
+  .aboutme__txt h1 {
+    font-size: 3.2rem;
+  }
+  .aboutme__txt p {
+    font-size: 1.2rem;
+    margin-top: 25px;
+  }
+  .aboutme__blue-container {
+    height: 237px;
+  }
+  .aboutme__img {
+    position: relative;
+    top: 190px;
+  }
+}
+
+/* ---------------- PAGINA CONTACTO------------------- */
+/* ---------------- main formulario------------------- */
+.form {
+  background-color: #FFF1E7;
+  font-family: "Chivo", sans-serif;
+  padding: 2rem;
+}
+.form__body {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+}
+.form__body input {
+  border: #4D6AB2 2 solid 1px;
+  padding: 0.5rem;
+}
+.form__body textarea {
+  border: #4D6AB2 solid 1px;
+  padding: 0.5rem;
+}
+.form__body label {
+  color: #4D6AB2;
+  font-weight: 400;
+}
+.form__btn {
+  background-color: #4D6AB2;
+  border-radius: 8px;
+  width: 120px;
+  color: white;
+  margin: auto;
+  border-width: 0px;
+}
+.form h3 {
+  color: #1A3E66;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 100px;
+  }
+  .form__body {
+    grid-column: 6/13;
+    margin: 0px;
+    max-width: 800px;
+  }
+  .form h3 {
+    grid-column: 1/4;
+    text-align: left;
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -21,6 +21,11 @@
     font-weight: 700;
   }
 
+  &__h2{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
   h3 {
     padding-top: 0.5rem;
     font-size: 1.5rem;
@@ -41,6 +46,11 @@
       font-size: 2.5rem;
     }
 
+    &__h2{
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+    
     h3 {
       font-size: 1.5rem;
     }
@@ -73,7 +83,7 @@
 
   @include desktop {
     background-color: transparent;
-    background-image: url(../img/frase-azul.jpg);
+    background-image: url(../img/frase-azul.svg);
     font-size: 1.8rem;
     height: 363px;
     display: flex;
@@ -84,6 +94,8 @@
       p {
         position: relative;
         top: 10px;
+        padding-right: 4rem;
+        padding-left: 4rem;
       }
     }
   }
@@ -110,6 +122,21 @@
       align-items: center;
       padding-top: 2rem;
       color: $col-blanco;
+
+      &:hover{
+        font-size: 1.2rem;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+
+    img{
+      max-width: 295px;
+      filter: grayscale(100%);
+    }
+
+    img:hover{
+      filter: grayscale(0%)
     }
   }
 
@@ -121,6 +148,12 @@
 
     a {
       background-color: $col-celeste
+    }
+
+    a:hover{
+      .projects__img--brand{
+        filter: grayscale(0%);
+      }
     }
   }
 

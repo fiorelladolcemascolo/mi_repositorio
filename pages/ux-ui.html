@@ -12,7 +12,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/styles.css">
-        <title>UX UI</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <title>Fiorella Dolcemascolo UX/UI and graphic designer portfolio ux ui projects interface design web and mobile responsive</title>
     </head>
 
 <body>
@@ -46,23 +48,75 @@
 <!------ main ------->
 <main>
     <section class="encabezado__general">
-        <h1 class="h1-ux">
+        <h1 class="h1-ux animate__animated animate__lightSpeedInLeft">
             UX l UI
         </h1>
 
         <div class="portfolio">
-            <div>
-                <img src="../img/ux-centralab.jpg" alt="">
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../img/centralab.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <div class="portfolio__hover">
+                <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="../img/ux-centralab.jpg" alt="">
                 <h4>CENTRALAB LABORATORIO WEB</h4>
             </div>
 
-            <div>
-                <img src="../img/ux-mecopa.jpg" alt="">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../img/mecopa.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <div class="portfolio__hover">
+                <img data-bs-toggle="modal" data-bs-target="#exampleModal2" src="../img/ux-mecopa.jpg" alt="">
                 <h4>ME COPA APP DE VINOS</h4>
             </div>
 
-            <div>
-                <img src="../img/ux-cubelo.jpg" alt="">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../img/cubelo.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <div class="portfolio__hover">
+                <img data-bs-toggle="modal" data-bs-target="#exampleModal3" src="../img/ux-cubelo.jpg" alt="">
                 <h4>CUBELO MARKETING FOR REAL STATE WEB</h4>
             </div>
 
@@ -111,7 +165,7 @@
 
 
         <div class="footer__container-img">
-            <img src="../img/img-contact.svg" alt="imagen contacto" class="footer__img">
+            <img src="../img/img-contact.svg" alt="imagen contacto" class="footer__img" data-aos="fade-up">
         </div>
 
     </div>
@@ -120,7 +174,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script> 
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>

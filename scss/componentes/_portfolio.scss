@@ -28,6 +28,13 @@
   color: $col-gris;
   font-family: $ff-chivo;
 
+  &__hover{
+    &:hover{
+      transform: scale(1.05);
+      transition-timing-function: ease;
+    }
+  }
+
   img {
     max-width: 500px;
   }
@@ -66,6 +73,8 @@
 .encabezado__general .h1-ux {
   background-color: #fdbdb7;
 }
+
+
 
 /* ---------------- PAGINA EDITORIAL------------------- */
 

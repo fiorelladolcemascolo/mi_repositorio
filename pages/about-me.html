@@ -13,7 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>About me</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Fiorella Dolcemascolo UX/UI and graphic designer portfolio about me</title>
+    <meta name="description" content="About Fiorella Dolcemascolo, her studies and her professional approach.">
 </head>
 
 
@@ -32,7 +35,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav barra">
                         <li class="nav-item">
-                            <a class="nav-link ms-lg-3" href="/pages/about-me.html">ABOUT ME</a>
+                            <a class="nav-link ms-lg-3 text-decoration-underline" href="/pages/about-me.html">ABOUT ME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ms-lg-3" href="../index.html#projects">PROJECTS</a>
@@ -55,25 +58,21 @@
             <div class="aboutme__txt">
                 <h1>Fiorella Dolcemáscolo
                     Graphic & UX UI designer</h1>
-                <p>Estudié la carrera Diseño en Comunicación visual en la Universidad Nacional de La Plata.</p>
-                <p> Me considero una persona proactiva, responsable y alegre. </p>
-                <p>El trabajo interdisciplinar me resulta muy enriquecedor y me entusiasma.</p>
-                <p>Me apasiona lo que hago y trato de afrontar cada tarea que se me asigna con mucho esfuerzo y
-                    dedicación, siempre con ganas de aprender.</p>
-                <p> Me encanta investigar, analizar y diseñar soluciones para crear experiencias atractivas, eficientes,
-                    intuitivas y memorables. Para lograrlo, considero que cada etapa del diseño debe estar centrada en
-                    los usuarios.Me apasiona descubrir la esencia de cada marca y expresarla visualmente. Promover no
-                    sólo el producto, sino también la creación de valor del mismo. La creación de significado a través
-                    de símbolos, tener personalidad y un propósito, identificarse con las personas, con sus historias,
-                    con sus causas y generar experiencias positivas.</p>
+                <p>I studied Visual Communication Design at Universidad Nacional de La Plata.</p>
+                <p> I consider myself proactive, responsible, and cheerful. </p>
+                <p>Interdisciplinary work is very enriching to me and the best way to tackle large projects and great ideas.</p>
+                <p>I am passionate about what I do, and I approach every task assigned to me with great effort and dedication, always eager to learn.</p>
+                <p> I love researching, analyzing, and designing solutions to create engaging, efficient, intuitive, and memorable experiences. To achieve this, I believe that every stage of the design process should be user-centered.</p> <p>I am passionate about discovering the essence of each brand and expressing it visually. Promoting not only the product but also its value creation. Creating meaning through symbols, having personality and purpose, identifying with people, their stories, their causes, and generating positive experiences.</p>
             </div>
 
             <div class="aboutme__img">
-                <img src="../img/img-escritorio.svg" alt="escritorio diseño">
+                <img class="animate__animated animate__slideInRight" src="../img/img-escritorio.svg" alt="escritorio diseño">
             </div>
         </section>
 
-        <div class="aboutme__blue-container"></div>
+        <div class="aboutme__blue-container">
+            <img class="aboutme__imgazul" src="../img/fioredol-gif.gif" alt="animacion de fiore dol">
+        </div>
 
 
         <!------ footer------->
@@ -111,7 +110,7 @@
 
 
             <div class="footer__container-img">
-                <img src="../img/img-contact.svg" alt="imagen contacto" class="footer__img">
+                <img src="../img/img-contact.svg" alt="imagen contacto" class="footer__img" data-aos="fade-up">
             </div>
 
         </div>
@@ -121,6 +120,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 

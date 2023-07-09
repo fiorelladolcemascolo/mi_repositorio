@@ -25,8 +25,8 @@
   }
 
   &__blue-container {
-    background-color: #1A3E66;
-    height: 109px;
+    background-color: $col-azulclaro;
+    height: auto;
   }
 
   @include desktop {
@@ -48,7 +48,7 @@
     }
 
     &__blue-container {
-      height: 237px;
+      height: auto;
     }
 
     &__img {

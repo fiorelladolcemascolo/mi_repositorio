@@ -22,6 +22,11 @@ a {
 .navbar-brand {
   width: 165px;
 }
+.navbar-brand:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.35));
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
 .navbar-toggler {
   color: #4D6AB2;
   border-radius: 50%;
@@ -86,6 +91,10 @@ a {
   gap: 20px;
   color: #737373;
   font-family: "Chivo", sans-serif;
+}
+.portfolio__hover:hover {
+  transform: scale(1.05);
+  transition-timing-function: ease;
 }
 .portfolio img {
   max-width: 500px;
@@ -163,16 +172,17 @@ a {
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 435px;
+    height: 435 px;
   }
   .footer__container-img {
     display: block;
     align-content: baseline;
     position: relative;
+    padding-top: 30px;
+    height: auto;
   }
   .footer__img {
     height: 397px;
-    position: absolute;
     bottom: 0px;
     left: -100px;
   }
@@ -200,6 +210,10 @@ a {
   font-size: 2rem;
   font-weight: 700;
 }
+.presentacion__h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
 .presentacion h3 {
   padding-top: 0.5rem;
   font-size: 1.5rem;
@@ -217,6 +231,10 @@ a {
   }
   .presentacion h1 {
     font-size: 2.5rem;
+  }
+  .presentacion__h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
   }
   .presentacion h3 {
     font-size: 1.5rem;
@@ -246,7 +264,7 @@ a {
 @media (min-width: 1024px) {
   .frase-azul {
     background-color: transparent;
-    background-image: url(../img/frase-azul.jpg);
+    background-image: url(../img/frase-azul.svg);
     font-size: 1.8rem;
     height: 363px;
     display: flex;
@@ -256,6 +274,8 @@ a {
   .frase-azul__texto p {
     position: relative;
     top: 10px;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
 
@@ -279,6 +299,17 @@ a {
   padding-top: 2rem;
   color: white;
 }
+.projects__categorias a:hover {
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.projects__categorias img {
+  max-width: 295px;
+  filter: grayscale(100%);
+}
+.projects__categorias img:hover {
+  filter: grayscale(0%);
+}
 .projects__brand, .projects__enviromental, .projects__social, .projects__editorial, .projects__ux-ui, .projects__motion, .projects__logo {
   display: flex;
   flex-direction: column-reverse;
@@ -287,6 +318,9 @@ a {
 }
 .projects__brand a, .projects__enviromental a, .projects__social a, .projects__editorial a, .projects__ux-ui a, .projects__motion a, .projects__logo a {
   background-color: #87C0F4;
+}
+.projects__brand a:hover .projects__img--brand, .projects__enviromental a:hover .projects__img--brand, .projects__social a:hover .projects__img--brand, .projects__editorial a:hover .projects__img--brand, .projects__ux-ui a:hover .projects__img--brand, .projects__motion a:hover .projects__img--brand, .projects__logo a:hover .projects__img--brand {
+  filter: grayscale(0%);
 }
 .projects h2 {
   color: #4D6AB2;
@@ -335,8 +369,8 @@ a {
   margin-top: 50px;
 }
 .aboutme__blue-container {
-  background-color: #1A3E66;
-  height: 109px;
+  background-color: #4D6AB2;
+  height: auto;
 }
 @media (min-width: 1024px) {
   .aboutme {
@@ -355,7 +389,7 @@ a {
     margin-top: 25px;
   }
   .aboutme__blue-container {
-    height: 237px;
+    height: auto;
   }
   .aboutme__img {
     position: relative;

@@ -430,7 +430,7 @@ a {
   margin: auto;
   border-width: 0px;
 }
-.form h3 {
+.form h1 {
   color: #1A3E66;
   font-size: 1.2rem;
   text-align: center;
@@ -448,7 +448,7 @@ a {
     margin: 0px;
     max-width: 800px;
   }
-  .form h3 {
+  .form h1 {
     grid-column: 1/4;
     text-align: left;
     font-size: 2rem;
